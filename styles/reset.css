@@ -1,0 +1,50 @@
+@import url('../styles/header.css');
+@import url('../styles/about.css');
+@import url('../styles/team.css');
+@import url('../styles/portfolio.css');
+@import url('../styles/footer.css');
+:root {
+    --first-color: rgb(37, 37, 37);
+    --first-color-low-opacity: rgb(37, 37, 37, 0.5);
+    --second-color: rgb(235, 235, 235);
+    --second-color-low-opacity: rgb(245, 243, 243, 0.97);
+    --third-color: rgb(255, 217, 0);
+    --fourth-color: white;
+    --fiveth-color: rgba(19, 16, 9, 0.90);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient(90deg, var(--second-color-low-opacity), var(--second-color-low-opacity)), url('../assets/imgs/depositphotos_66029155-stock-illustration-vector-seamless-pattern-scissors.jpg');
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    min-width: 150px;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: max(14px, 1.4vw);
+    transition: 0.2s;
+}

@@ -1,0 +1,108 @@
+.portfolio {
+    height: 100vh;
+}
+
+.title-portfolio-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.portfolio .title-portfolio-area .title-portfolio {
+    position: relative;
+    font-size: max(30px, 2.8vw);
+    color: var(--first-color);
+}
+
+.portfolio .title-portfolio-area .title-portfolio::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 50%;
+    height: 3px;
+    background: var(--third-color);
+}
+
+.portfolio .gallery-photos-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.portfolio .gallery-photos-area .photos {
+    box-shadow: 0 3.5px 10px black;
+}
+
+.portfolio .gallery-photos-area .photos {
+    background: linear-gradient(90deg, var(--first-color), transparent), url('../assets/imgs/corte1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .gallery-photos-area .photos-two {
+    background: linear-gradient(90deg, var(--first-color), transparent), url('../assets/imgs/corte-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .gallery-photos-area .photos-three {
+    background: linear-gradient(90deg, var(--first-color), transparent), url('../assets/imgs/corte-5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .gallery-photos-area .photos-four {
+    background: linear-gradient(90deg, var(--first-color), transparent), url('../assets/imgs/corte-7.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .gallery-photos-area .photos-five {
+    background: linear-gradient(90deg, var(--first-color), transparent), url('../assets/imgs/corte-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .gallery-photos-area .photos-six {
+    background: linear-gradient(90deg, var(--first-color), transparent), url('../assets/imgs/corte-8.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .gotoportfolio-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.portfolio .gotoportfolio-area .gotoportfolio {
+    border: 1px solid var(--first-color);
+    color: var(--first-color);
+    background: transparent;
+}
+
+.portfolio .gotoportfolio-area .gotoportfolio:hover {
+    background: var(--first-color);
+    color: var(--second-color);
+}
+
+@media(min-widTH:800px) {
+    .title-portfolio-area {
+        height: 15%;
+    }
+    .portfolio .gallery-photos-area {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 60%;
+        height: 70%;
+    }
+    .portfolio .gotoportfolio-area {
+        height: 15%;
+    }
+}

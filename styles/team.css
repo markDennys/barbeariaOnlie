@@ -1,0 +1,122 @@
+.our-team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(90deg, var(--fiveth-color), var(--fiveth-color)), url('../assets/imgs/Barbershop_7.jpg') fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.our-team .title-ourTeam-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+}
+
+.our-team .title-ourTeam-area .title-ourTeam {
+    position: relative;
+    font-size: max(30px, 2.8vw);
+    color: var(--second-color);
+}
+
+.our-team .title-ourTeam-area .title-ourTeam::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 50%;
+    height: 3px;
+    background: var(--third-color);
+}
+
+.our-team .barbers-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.our-team .barbers-area .barbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.our-team .barbers-area .barbers .image-barber {
+    width: 40%;
+    height: 40%;
+    border: 5px solid var(--second-color);
+    box-shadow: 0 7px 10px black;
+    background: url('../assets/imgs/barbeiro-1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.our-team .barbers-area .barbers .barber-two {
+    background: url('../assets/imgs/barba-navalha-min.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.our-team .barbers-area .barbers .infos-barber {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-team .barbers-area .barbers .infos-barber .name {
+    font-size: max(25px, 2vw);
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+
+.our-team .barbers-area .barbers .infos-barber .discription {
+    width: 80%;
+    font-size: max(15px, 1.3vw);
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+
+.our-team .barbers-area .barbers .infos-barber .ul-barbers {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.our-team .barbers-area .barbers .infos-barber .ul-barbers .logos {
+    width: 30px;
+}
+
+@media(min-width:800px) {
+    .our-team .barbers-area .barbers {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .our-team .barbers-area .barbers .infos-barber {
+        height: 70%;
+        background: var(--first-color-low-opacity)
+    }
+    .our-team .barbers-area .barbers .image-barber,
+    .barber-two {
+        width: 50%;
+        height: 80%;
+    }
+    .our-team .barbers-area .barbers .infos-barber .discription {
+        width: 100%;
+    }
+}

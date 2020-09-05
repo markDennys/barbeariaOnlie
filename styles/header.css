@@ -1,0 +1,142 @@
+header {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--fiveth-color), var(--fiveth-color)), url('../assets/imgs/AT3A3824.jpg')fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+header .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    padding: 30px;
+    background: rgb(37, 37, 37);
+    box-shadow: 0 10px 10px rgba(15, 15, 15, 0.9);
+}
+
+header .navBar .logo {
+    color: var(--second-color);
+    font-size: max(25px, 1.8vw);
+}
+
+header .navBar .menu-mobile-area {
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+header .navBar .menu-mobile-area .menu-mobile {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background: var(--fourth-color);
+}
+
+header .navBar .menu-mobile-area .menu-mobile::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--fourth-color);
+}
+
+header .navBar .menu-mobile-area .menu-mobile::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--fourth-color);
+}
+
+.ul-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(37, 37, 37, 0.98);
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+.show-ul {
+    transform: translateX(0);
+}
+
+header .navBar .ul-header .li-header {
+    margin: 15px;
+}
+
+header .navBar .ul-header .li-header .link-nav {
+    color: var(--second-color);
+    font-size: max(20px, 1.3vw);
+    transition: 0.2s;
+}
+
+header .navBar .ul-header .li-header .link-nav:hover {
+    color: var(--fourth-color);
+}
+
+header .content-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+
+header .content-header .paragraph-header {
+    font-size: max(20px, 2vw);
+    font-style: italic;
+    font-weight: 200;
+    color: var(--second-color);
+}
+
+header .content-header .title-page {
+    text-transform: uppercase;
+    font-size: max(40px, 5.5vw);
+    letter-spacing: 3px;
+    color: var(--second-color);
+}
+
+header .content-header .btn-header {
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
+}
+
+header .content-header .btn-header:hover {
+    background: var(--third-color);
+    color: var(--first-color);
+}
+
+@media(min-width:800px) {
+    header .navBar .menu-mobile-area {
+        display: none;
+    }
+    header .navBar .ul-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        background: none;
+        transform: translateX(0);
+        transition: 0s;
+    }
+}

@@ -1,0 +1,68 @@
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        background: var(--first-color);
+        text-align: center;
+    }
+    
+    footer .img-title-footer {
+        height: 10%;
+    }
+    
+    footer .img-title-footer .img-mustache {
+        margin-top: 20px;
+        width: 7%;
+    }
+    
+    footer .infos-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    footer .infos-footer .motivational {
+        font-size: max(15px, 1.3vw);
+        width: 100%;
+        color: var(--second-color);
+        margin-top: 10px;
+    }
+    
+    footer .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0;
+        border-top: 1px solid black;
+    }
+    
+    footer .copyright .text-footer {
+        font-size: max(15px, 1.1vw);
+        font-weight: 200;
+        color: var(--second-color);
+    }
+    
+    footer .text-footer .link-footer {
+        color: var(--third-color);
+        transition: 0.2s;
+    }
+    
+    footer .text-footer .link-footer:hover {
+        text-decoration: underline;
+    }
+    
+    @media(min-width:800px) {
+        footer .infos-footer .motivational {
+            width: 40%;
+        }
+    }
