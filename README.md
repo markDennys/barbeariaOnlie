@@ -1,6 +1,6 @@
 # Barbearia Online
 
-Já pensou em ter sua barbearia na web ? Aposto que sim, e esse é o nosso propósito, sua barbearia chegar ao cliente, sem ele sair de casa !
+Já pensou em ter sua barbearia na web ? Aposto que sim, e esse é o propósito do site, sua barbearia chegar ao cliente, sem ele sair de casa !
 
 ## preview
 
