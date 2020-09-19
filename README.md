@@ -14,4 +14,4 @@ Já pensou em ter sua barbearia na web ? Aposto que sim, e esse é o propósito 
 . JAVASCRIPT
 ```
 
-você pode acessá-lo clicando aqui : https://markdennys.github.io/barbeariaOnlie/
+você pode acessá-lo clicando aqui : https://markdennys.github.io/barbeariaOnline/
